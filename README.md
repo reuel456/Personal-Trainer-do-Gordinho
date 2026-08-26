@@ -1,30 +1,60 @@
-Markdown# 📦 Guia Completo: Flexbox no CSS & Dicas de GitHub
+# 📘 CSS Flexbox: Documentação & Boas Práticas
 
-Este repositório contém um guia completo sobre o uso do **Flexbox** no CSS e instruções práticas de uso do **GitHub**.
+Uma documentação técnica dedicada ao estudo e aplicação do **CSS Flexible Box Layout** (Flexbox).
 
 ---
 
-## 🎨 Guia Prático de CSS Flexbox
+## 📐 Módulo CSS Flexbox
 
-O **Flexbox** (Flexible Box Layout) é um modelo unidimensional criado para alinhar, distribuir e organizar elementos em uma página web de forma responsiva.
+O Flexbox é um modelo de layout unidimensional projetado para distribuição de espaço entre elementos e alinhamento avançado de componentes em interfaces web responsivas.
 
-### ⚙️ Configuração Inicial
+### ⚙️ Habilitação do Contexto Flex
 
-Para ativar o Flexbox, defina a propriedade `display` no elemento pai (container):
+Para iniciar um contexto de formação Flexbox, declare a propriedade `display` no elemento container:
 
 ```css
-.container {
-  display: flex; /* ativa o flexbox para os filhos diretos */
+.flex-container {
+  display: flex;
 }
-📌 Propriedades do Container (Pai)PropriedadeFunçãoValores Principaisflex-directionDefine a direção do eixo principalrow (padrão), column, row-reverse, column-reversejustify-contentAlinha os itens no eixo principalflex-start, center, flex-end, space-between, space-around, space-evenlyalign-itemsAlinha os itens no eixo cruzadostretch (padrão), flex-start, center, flex-end, baselineflex-wrapDefine se os itens quebram linhanowrap (padrão), wrap, wrap-reversegapEspaçamento entre os itensEx: 16px, 1rem🧩 Propriedades dos Itens (Filhos)flex-grow: Define o quanto o item pode crescer para ocupar o espaço livre (ex: flex-grow: 1;).flex-shrink: Define se o item pode encolher se o espaço for menor (ex: flex-shrink: 0;).flex-basis: Tamanho inicial do item antes da distribuição do espaço (ex: flex-basis: 200px;).align-self: Sobrescreve a regra align-items do container para este item específico.💡 Exemplos PráticosCentralização PerfeitaCSS.centralizado {
+```
+
+### 🎛️ Propriedades do Elemento Pai (Flex Container)
+
+| Propriedade | Descrição | Valores Principais |
+| :--- | :--- | :--- |
+| **`flex-direction`** | Define o eixo principal de alinhamento dos itens. | `row` *(padrão)* \| `column` \| `row-reverse` \| `column-reverse` |
+| **`justify-content`** | Distribui o espaço extra ao longo do eixo principal. | `flex-start` \| `center` \| `flex-end` \| `space-between` \| `space-around` \| `space-evenly` |
+| **`align-items`** | Controla o alinhamento dos itens no eixo cruzado (perpendicular). | `stretch` *(padrão)* \| `flex-start` \| `center` \| `flex-end` \| `baseline` |
+| **`flex-wrap`** | Define se os itens devem quebrar linha caso excedam a largura. | `nowrap` *(padrão)* \| `wrap` \| `wrap-reverse` |
+| **`gap`** | Define o espaçamento simplificado entre as linhas/colunas. | *Ex:* `16px`, `1.5rem` |
+
+### 🧩 Propriedades dos Elementos Filhos (Flex Items)
+
+- **`flex-grow`**: Define o fator de expansão do item em relação ao espaço sobressalente (*default: `0`*).
+- **`flex-shrink`**: Define a capacidade de encolhimento do item quando o espaço é insuficiente (*default: `1`*).
+- **`flex-basis`**: Determina o tamanho base inicial do item antes da distribuição do espaço restante (*Ex: `250px`, `auto`*).
+- **`align-self`**: Sobrescreve o alinhamento individual definido por `align-items` no container.
+
+---
+
+## 💻 Casos de Uso Comuns
+
+### A. Centralização Bidimensional Absoluta
+```css
+.hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
-Menu de Navegação ResponsivoCSS.navbar {
+```
+
+### B. Barra de Navegação Distribuída
+```css
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
 }
+```
