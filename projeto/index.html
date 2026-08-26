@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Trainer do Gordinho</title>
+    <link rel="stylesheet" href="personal-trainer.css">
+</head>
+<body>
+
+    <!-- 1. CABEÇALHO — HEADER -->
+    <header id="navbar">
+        <div class="logo-area">
+            <img id="logo" src="logo.png" alt="Logo Personal Trainer do Gordinho">
+        </div>
+        <nav>
+            <ul id="navlinks">
+                <li class="link"><a href="#inicio" class="btn">Início</a></li>
+                <li class="link"><a href="#servicos" class="btn">Serviços</a></li>
+                <li class="link"><a href="#sobre" class="btn">Sobre nós</a></li>
+                <li class="link"><a href="#contato" class="btn">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <a href="#contato" class="gradient-button">
+                <span class="gradient-text">Começar Agora</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. SEÇÃO PRINCIPAL — HERO -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <h1>Sua transformação começa aqui!</h1>
+            <p>Emagrecimento definitivo com foco na sua realidade. Treinos sob medida para você perder peso com saúde, sem passar fome e sem neuras.</p>
+            <a href="#contato" class="cta-button">Quero Emagrecer</a>
+        </div>
+        <div class="hero-image">
+            <img src="mascote.png" alt="Mascote Treino">
+        </div>
+    </section>
+
+    <!-- 3. SEÇÃO DE SERVIÇOS -->
+    <section id="servicos" class="services-section">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="card-icon">🏋️‍♂️</div>
+                <h3>Consultoria Presencial</h3>
+                <p>Acompanhamento individual e correção de postura em tempo real na academia.</p>
+            </div>
+            <div class="service-card">
+                <div class="card-icon">📱</div>
+                <h3>Treino Online</h3>
+                <p>Planilhas completas pelo aplicativo para você treinar onde e quando quiser.</p>
+            </div>
+            <div class="service-card">
+                <div class="card-icon">🥗</div>
+                <h3>Guia Alimentar</h3>
+                <p>Dicas e estratégias de alimentação saudável sem restrições malucas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SEÇÃO "SOBRE NÓS" -->
+    <section id="sobre" class="about-section">
+        <div class="about-image">
+            <img src="https://unsplash.com" alt="Equipe de Treinamento">
+        </div>
+        <div class="about-content">
+            <h2>Sobre Nós</h2>
+            <p>Nascemos com a missão de descomplicar o emagrecimento. O projeto "Personal Trainer do Gordinho" já transformou a vida e a saúde de centenas de alunos através de uma metodologia humanizada e acolhedora.</p>
+            <p class="credibility-tag">✓ Profissionais Certificados pelo CREF</p>
+        </div>
+    </section>
+
+    <!-- 5. SEÇÃO DE CONTATO -->
+    <section id="contato" class="contact-section">
+        <h2>Fale Conosco</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required placeholder="seu.email@exemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" required placeholder="(00) 99999-9999">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" rows="4" required placeholder="Como podemos te ajudar?"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- 6. RODAPÉ — FOOTER -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-info">
+                <h3>Personal Trainer do Gordinho</h3>
+                <p>Transformando vidas através do movimento.</p>
+            </div>
+            <div class="footer-contacts">
+                <h4>Contato</h4>
+                <p>contato@ptgordinho.com</p>
+                <p>(11) 67534-436344</p>
+            </div>
+            <div class="footer-socials">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Personal Trainer do Gordinho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
